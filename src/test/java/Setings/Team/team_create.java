@@ -106,7 +106,7 @@ public class team_create {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[2]/a")).click();
         Thread.sleep(2000);
 
-        //Проверить на наличие созданной тимы
+        driver.quit();
 
 
 
