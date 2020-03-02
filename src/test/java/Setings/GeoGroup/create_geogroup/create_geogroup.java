@@ -94,5 +94,6 @@ public class create_geogroup {
         Thread.sleep(2000);
 
         driver.quit();
+
     }
 }
