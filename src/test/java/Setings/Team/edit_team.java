@@ -111,6 +111,7 @@ public class edit_team {
         //Click on the button Save
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[9]/main/div/div[2]/div/div/div/div/div/div/div/div/div/div[1]/button")).click();
 
+        driver.quit();
 
     }
 }
