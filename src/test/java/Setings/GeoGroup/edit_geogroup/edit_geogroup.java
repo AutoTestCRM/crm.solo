@@ -1,4 +1,4 @@
-package Setings.GeoGroup.create_geogroup;
+package Setings.GeoGroup.edit_geogroup;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Random;
 
-public class create_geogroup {
+
+public class edit_geogroup {
 
     public ChromeDriver driver;
     private Random random;
@@ -17,6 +18,7 @@ public class create_geogroup {
         System.setProperty("webdriver.chrome", "\u200E\u2068Macintosh HD\u2069 ▸ \u2068Пользователи\u2069 ▸ \u2068vitaliihrebeniuk\u2069 ▸ \u2068Рабочий стол\u2069 ▸ \u2068crm.solo.create_user\u2069 ▸ \u2068chromedriver\u2069 ");
         driver = new ChromeDriver();
         System.out.println("start");
+
     }
 
     @Test
@@ -55,43 +57,41 @@ public class create_geogroup {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[3]/a")).click();
         Thread.sleep(1000);
 
-        //Click on the button AddGeoGroup
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div[1]/div/div/div/button")).click();
+        //Choice Group
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[12]/td[4]/button")).click();
         Thread.sleep(1000);
 
         //Name
-        Random random = new Random();
-        int n = random.nextInt(2000) + 1;
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[1]/div/div[1]/div/input")).sendKeys("autotest" + n + "geogroup");
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[1]/div/div[1]/div/input")).sendKeys("autotest");
         Thread.sleep(1000);
 
         //Countries
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[1]/input")).click();
         Thread.sleep(1000);
-        //Choice Country
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div/div/div[1]/a")).click();
         Thread.sleep(1000);
-        //Click on the button Close
+
+        //Click on the Close button
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[2]/button[2]")).click();
         Thread.sleep(1000);
 
-        //Click on the button AddGeoGroup
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div[1]/div/div/div/button")).click();
+        //Choice Group
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[12]/td[4]/button")).click();
         Thread.sleep(1000);
+
         //Name
-        int n_geogroup = random.nextInt(2000) + 1;
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[1]/div/div[1]/div/input")).sendKeys("autotest" + n_geogroup + "geogroup");
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[1]/div/div[1]/div/input")).sendKeys("autotest");
         Thread.sleep(1000);
+
         //Countries
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[1]/input")).click();
         Thread.sleep(1000);
-        //Choice Country
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[3]/div/div/div[1]/a")).click();
         Thread.sleep(1000);
 
-        //Click on the button
+        //Click on the Save button
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/div/div/div[2]/button[1]")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         driver.quit();
 
