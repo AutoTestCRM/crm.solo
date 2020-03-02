@@ -1,4 +1,4 @@
-package Setings.Team;
+package Setings.Team.edit_team;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class edit_team {
     }
 
     @Test
-    public void CreateUsers() throws InterruptedException {
+    public void edit_team() throws InterruptedException {
 
         driver.get("https://test.solo-crm.com/#/");
 

@@ -1,4 +1,4 @@
-package Setings.Team;
+package Setings.Team.team_create;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ public class team_create {
     }
 
     @Test
-    public void CreateUsers() throws InterruptedException {
+    public void team_create() throws InterruptedException {
 
         driver.get("https://test.solo-crm.com/#/");
 
