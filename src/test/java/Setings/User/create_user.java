@@ -1,14 +1,16 @@
-package Setings.User.create_user;
+package Setings.User;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Random;
 
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class create_user {
 
     public ChromeDriver driver;

@@ -1,18 +1,19 @@
-package Setings.User.edit_user;
+package Setings.User;
 
 import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Random;
-
 public class edit_user {
-
     public ChromeDriver driver;
     private Random random;
 
-    @Before
     public void setUp() {
         System.setProperty("webdriver.chrome", "\u200E\u2068Macintosh HD\u2069 ▸ \u2068Пользователи\u2069 ▸ \u2068vitaliihrebeniuk\u2069 ▸ \u2068Рабочий стол\u2069 ▸ \u2068crm.solo.create_user\u2069 ▸ \u2068chromedriver\u2069 ");
         driver = new ChromeDriver();
@@ -22,9 +23,6 @@ public class edit_user {
 
     @Test
     public void EditUser() throws InterruptedException {
-
-        driver.get("https://test.solo-crm.com/#/");
-
 
         //Login Admin
         // Login
