@@ -133,10 +133,10 @@ public class deals_payoutlist_fincontrol {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div/a")).click();
         //Wait Payout List
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        WebElement elem2 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[8]/main/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div[6]/div/div[1]/div/table/tbody/tr[1]/td[4]/button"));
+        WebElement elem2 = driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div[6]/div/div[1]/div/table/tbody/tr[1]/td[4]/button"));
 
         //Download Payout
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[8]/main/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div[6]/div/div[1]/div/table/tbody/tr[1]/td[4]/button")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[7]/main/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div[1]/div/div[6]/div/div[1]/div/table/tbody/tr[1]/td[4]/button")).click();
         Thread.sleep(1000);
 
         driver.quit();
